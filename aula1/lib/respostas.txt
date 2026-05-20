@@ -1,0 +1,15 @@
+1 - Por que agora foi necessário usar um StatefulWidget?
+2 - Qual informação da tela muda quando o botão é pressionado?
+3 - Qual variável foi alterada dentro do setState()?
+4 - O que o setState() faz no Flutter?
+5 - O que poderia acontecer se a variável fosse alterada sem usar setState()?
+
+1- O StatelessWidget não reconstrói a tela sozinho quando dados internos mudam. O StatefulWidget possui um objeto de estado que permite atualizar e redesenhar a interface dinamicamente.
+
+2- O texto que exibe o valor do contador ou o estado visual do elemento associado ao clique.
+
+3- Geralmente a variável _counter (ou o nome equivalente que armazena o valor numérico/estado).
+
+4- Notifica o framework Flutter que o estado interno mudou. Isso força o método build a rodar novamente e atualiza a tela.
+
+5- A variável interna muda de valor na memória, mas a tela continua igual. O usuário não vê nenhuma alteração visual.
